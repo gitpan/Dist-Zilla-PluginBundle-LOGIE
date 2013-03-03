@@ -1,5 +1,9 @@
 Revision history for Dist-Zilla-PluginBundle-LOGIE
 
+0.03  2013-03-03
+
+    -Added LWP::Protocol::https
+
 0.02  2013-03-03
 
     - Added Twitter plugin

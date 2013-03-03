@@ -38,7 +38,8 @@
             "Dist::Zilla::Plugin::PodWeaver" : "0",
             "Dist::Zilla::Plugin::TaskWeaver" : "0",
             "Dist::Zilla::Plugin::Test::Compile" : "0",
-            "Dist::Zilla::Plugin::Twitter" : "0"
+            "Dist::Zilla::Plugin::Twitter" : "0",
+            "LWP::Protocol::https" : "0"
          }
       },
       "test" : {
@@ -60,7 +61,7 @@
          "web" : "https://github.com/logie17/dist-zilla-pluginbundle-logie"
       }
    },
-   "version" : "0.02",
+   "version" : "0.03",
    "x_Dist_Zilla" : {
       "perl" : {
          "version" : "5.016002"

@@ -32,9 +32,10 @@ my %WriteMakefileArgs = (
     "Dist::Zilla::Plugin::PodWeaver" => 0,
     "Dist::Zilla::Plugin::TaskWeaver" => 0,
     "Dist::Zilla::Plugin::Test::Compile" => 0,
-    "Dist::Zilla::Plugin::Twitter" => 0
+    "Dist::Zilla::Plugin::Twitter" => 0,
+    "LWP::Protocol::https" => 0
   },
-  "VERSION" => "0.02",
+  "VERSION" => "0.03",
   "test" => {
     "TESTS" => "t/*.t"
   }

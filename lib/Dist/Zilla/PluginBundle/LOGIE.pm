@@ -3,7 +3,7 @@ BEGIN {
   $Dist::Zilla::PluginBundle::LOGIE::AUTHORITY = 'cpan:LOGIE';
 }
 {
-  $Dist::Zilla::PluginBundle::LOGIE::VERSION = '0.02';
+  $Dist::Zilla::PluginBundle::LOGIE::VERSION = '0.03';
 }
 use Moose;
 # ABSTRACT: Dist::Zilla plugins for me
@@ -127,7 +127,6 @@ has is_test_dist => (
     default => sub {
         my $self = shift;
         return 1 if $ENV{DZIL_FAKE_RELEASE};
-        return $self->dist =~ /^Foo-/ ? 1 : 0
     },
     );
 
@@ -268,7 +267,7 @@ Dist::Zilla::PluginBundle::LOGIE - Dist::Zilla plugins for me
 
 =head1 VERSION
 
-version 0.02
+version 0.03
 
 =head1 SYNOPSIS
 

@@ -37,7 +37,8 @@
             "Dist::Zilla::Plugin::NoTabsTests" : "0",
             "Dist::Zilla::Plugin::PodWeaver" : "0",
             "Dist::Zilla::Plugin::TaskWeaver" : "0",
-            "Dist::Zilla::Plugin::Test::Compile" : "0"
+            "Dist::Zilla::Plugin::Test::Compile" : "0",
+            "Dist::Zilla::Plugin::Twitter" : "0"
          }
       },
       "test" : {
@@ -59,7 +60,7 @@
          "web" : "https://github.com/logie17/dist-zilla-pluginbundle-logie"
       }
    },
-   "version" : "0.01",
+   "version" : "0.02",
    "x_Dist_Zilla" : {
       "perl" : {
          "version" : "5.016002"
@@ -235,6 +236,11 @@
             "class" : "Dist::Zilla::Plugin::UploadToCPAN",
             "name" : "@LOGIE/UploadToCPAN",
             "version" : "4.300030"
+         },
+         {
+            "class" : "Dist::Zilla::Plugin::Twitter",
+            "name" : "@LOGIE/Twitter",
+            "version" : "0.020"
          },
          {
             "class" : "Dist::Zilla::Plugin::Prereqs",

@@ -3,7 +3,7 @@ BEGIN {
   $Dist::Zilla::PluginBundle::LOGIE::AUTHORITY = 'cpan:LOGIE';
 }
 {
-  $Dist::Zilla::PluginBundle::LOGIE::VERSION = '0.01';
+  $Dist::Zilla::PluginBundle::LOGIE::VERSION = '0.02';
 }
 use Moose;
 # ABSTRACT: Dist::Zilla plugins for me
@@ -177,6 +177,9 @@ has _plugins => (
             ),
             ($self->is_task      ? 'TaskWeaver'  : 'PodWeaver'),
             ($self->is_test_dist ? 'FakeRelease' : 'UploadToCPAN'),
+            qw(
+                Twitter
+            ),
         ]
     },
     );
@@ -265,7 +268,7 @@ Dist::Zilla::PluginBundle::LOGIE - Dist::Zilla plugins for me
 
 =head1 VERSION
 
-version 0.01
+version 0.02
 
 =head1 SYNOPSIS
 
@@ -332,6 +335,10 @@ My plugin bundle. Roughly equivalent to:
     [PodWeaver]
 
     [UploadToCPAN]
+    [Twitter]
+    tweet_url = https://metacpan.org/release/{{$AUTHOR_UC}}/{{$DIST}}-{{$VERSION}}/
+    tweet = Released {{$DIST}}-{{$VERSION}}{{$TRIAL}} {{$URL}}
+    url_shortener = TinyURL
 
 =head1 BUGS
 
